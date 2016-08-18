@@ -94,7 +94,12 @@ $.ajax({
       }
       location.reload();
     });
-
+    $("#create").keyup(function (d){
+      if(d.keycode == 13){
+        console.log("hello");
+        ("#create").click();
+      }
+    })
   }
 
 });
